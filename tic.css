@@ -1,0 +1,72 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+    flex-direction: column;
+}
+*::selection{
+    background-color: black;
+    color:white;
+}
+#gameName{
+    font-size:70px;
+    position:absolute;
+    top:50px;
+    border:1px solid grey;
+    padding:5px;
+    border-radius: 15px;
+}
+#mainContainer{
+    height:300px;
+    width:300px;
+    background-color: rebeccapurple;
+    display:flex;
+    flex-wrap:wrap;
+}
+.disappear{
+    animation: anime1 1s linear 0s 1 normal forwards;
+}
+@keyframes anime1 {
+    from{opacity: 1;}
+    to{opacity:0;}
+    to{display:none;}
+}
+.grids{
+    height:100px;
+    width:100px;
+    background-color:black;
+    box-sizing: border-box;
+    border:1px solid white;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:70px;
+}
+#outerText{
+    display:flex;
+}
+#turn{
+    margin:0;
+    font-size:80px;
+}
+#turnSymbol{
+    height:100px;
+    width:100px;
+    font-size:70px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#resultDisplay{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    scale:2;
+    cursor:pointer;
+    visibility: hidden;
+}
